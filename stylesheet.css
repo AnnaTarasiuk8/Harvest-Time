@@ -1,0 +1,141 @@
+#container{
+    width: 1000px;
+    height: 600px;
+    /* margin: 25%; */
+    margin-top: 255px;
+
+    margin-left: 25%;
+}
+#canvas{
+
+    border: greenyellow solid 3px;
+   
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 98%;
+    height: 800px;
+    
+}
+#score{
+    text-align: center;
+    position: absolute;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 80px;
+    margin-top: 20px;
+    text-decoration: wavy;
+    background-image: url(images/scorePanel.png);
+    color: brown;
+    width: 550px;
+    height: 200px;
+    background-size: cover;
+}
+#menu{
+
+    position: absolute;
+    background-image: url(images/Menu.PNG);
+    color: brown;
+    width: 350px;
+    height: 390px;
+    background-size: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin-left: -37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-top: 20%;
+    
+    
+}
+#welcome{
+    opacity: 0;
+    border-radius: 550px;
+    font-weight: bold;
+    width: 0px;
+    height: 0px;
+    background-image: url("images/welcomeFarm.PNG");
+    position: absolute;
+    animation: welcomeAnimate 12s;
+    text-align: center;
+    
+    box-shadow: 0px 0px 60px 10px inset white,
+    0px 0px 60px 10px inset white,
+    0px 0px 60px 10px inset white;
+    font-size: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration-color: black;
+    color: blueviolet;
+}
+.menu_container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 46%;
+    
+}
+.menu_btn{
+    margin-top: 10px;
+    width: 40px;
+    height: 41px;
+    border-radius: 50px;
+    outline:none;
+}
+@keyframes welcomeAnimate{
+0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    margin-top: 0px;
+
+}
+9%{
+    width: 100%;
+    height: 100%;
+}
+50% {
+    opacity: 1;
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+}
+91%{
+    width: 100%;
+    height: 100%;
+}
+100% {
+    opacity: 0;
+    margin-top: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+}
+
+    .alert {
+        padding: 20px;
+        background-color: #f44336; /* Red */
+        color: white;
+        margin-bottom: 15px;
+      }
+#timer{
+    position: absolute;
+    margin-left: -500px;
+    margin-top: 150px;
+    background-color: forestgreen;
+    font-size: 32px;
+    border-radius: 300px;
+    padding: 20px;
+}
+}
